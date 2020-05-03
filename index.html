@@ -11,8 +11,50 @@
 		</header>
 		
 		<main>
-			<p id="description"></p>
-			<form id="survey-form"></form>
+			<p id="description">Tell me about your aquariums!</p>
+			<form id="survey-form">
+				<p>
+					<label id="name-label" for="name">Name: </label>
+					<input id="name" type="text" placeholder="enter your name" required>
+				</p>
+				<p>
+					<label id="email-label" for="email">Email: </label>
+					<input id="email" type="email" placeholder="enter your email" required>
+				</p>
+				<p>
+					<label id="number-label" for="number">Number of tanks: </label>
+					<input id="number" type="number" min="0" max="100" placeholder="0-100" required>
+				</p>
+				<p>
+					<label for="dropdown">My tanks are: </label>
+					<select id="dropdown">
+						<option value="freshwater">Freshwater</option>
+						<option value="saltwater">Saltwater</option>
+						<option value="both">Both</option>
+					</select>
+				</p>
+				<fieldset>
+					<legend>I do maintenance: </legend> <br>
+					<label><input type="radio" name="maintenance" value="Weekly">Weekly</label><br>
+					<label><input type="radio" name="maintenance" value="Bi-Weekly">Bi-Weekly</label><br>
+					<label><input type="radio" name="maintenance" value="Monthly">Monthly</label><br>
+					<label><input type="radio" name="maintenance" value="Randomly">Randomly</label>
+				</fieldset>
+				<fieldset>
+					<legend>I stock:</legend> <br>
+					<input type="checkbox" id="fish" value="fish" checked>
+					<label for="fish">Fish</label><br>
+					<input type="checkbox" id="plants" value="plants">
+					<label for="plants">Plants</label><br>
+					<input type="checkbox" id="inverts" value="inverts">
+					<label for="inverts">Inverts</label>
+				</fieldset>
+				<p>
+					<label for="textarea">Any additional comments?</label><br>
+					<textarea id="textarea"></textarea>
+				</p>
+				<button id="submit" type="submit">Submit</button>
+			</form>
 		</main>
 		
 		<footer>
