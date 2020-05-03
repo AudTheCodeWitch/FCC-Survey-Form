@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+#logo {
+  height: 50px;
+}
